@@ -7,5 +7,5 @@ RUN npm run build --prod
 
 #stage 2
 FROM nginx:latest
-COPY --from=node /app/dist/demo-app /usr/share/nginx/html
+COPY --from=node /app/dist/ng-env-demo /usr/share/nginx/html
 EXPOSE 80
