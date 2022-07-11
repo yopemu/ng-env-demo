@@ -1,6 +1,7 @@
+// @ts-nocheck
 export const environment = {
   production: true,
-  featureX: false,
-  featureY: true,
-  featureZ: true,
+  featureA: window['env'].FEATURE_A,
+  featureB: window['env'].FEATURE_B,
+  featureC: window['env'].FEATURE_C,
 };
